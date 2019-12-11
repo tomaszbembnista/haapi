@@ -1,5 +1,6 @@
 package eu.wordpro.ha.api;
 
+import eu.wordpro.ha.api.model.OperationExecutionResult;
 import eu.wordpro.ha.api.model.ProcessorOperationArgument;
 import eu.wordpro.ha.api.model.ProcessorOperationDesc;
 
@@ -57,6 +58,8 @@ public interface SignalProcessor
      * @param name name of the operation
      * @return result of the operation
      */
-    String executeOperation(List<ProcessorOperationArgument> arguments, String name);
+    OperationExecutionResult executeOperation(List<ProcessorOperationArgument> arguments, String name);
+
+
 
 }
