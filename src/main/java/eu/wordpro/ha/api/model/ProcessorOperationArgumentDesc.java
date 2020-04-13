@@ -4,6 +4,7 @@ public class ProcessorOperationArgumentDesc {
 
     private DataType type;
     private String name;
+    private boolean optional;
 
     public DataType getType() {
         return type;
@@ -19,5 +20,13 @@ public class ProcessorOperationArgumentDesc {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isOptional() {
+        return optional;
+    }
+
+    public void setOptional(boolean optional) {
+        this.optional = optional;
     }
 }

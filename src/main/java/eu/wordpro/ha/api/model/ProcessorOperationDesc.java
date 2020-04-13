@@ -1,11 +1,12 @@
 package eu.wordpro.ha.api.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProcessorOperationDesc {
 
     private String name;
-    private List<ProcessorOperationArgumentDesc> arguments;
+    private List<ProcessorOperationArgumentDesc> arguments = new ArrayList<>();
     private DataType result;
 
     public String getName() {
